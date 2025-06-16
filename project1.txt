@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int a;
+        double b=0;
+        a=s.nextInt();
+        if(a<=200)
+        {
+            b=a*0.5;
+        }
+            else if(a<=400)
+            {
+              b=(a*0.65)+100;
+            }
+            else if(a<=600)
+            {
+                    b=(a*0.80)+200;
+            }
+             else if(a>600)
+             {
+                     b=(a*1.25)+425;
+             }    
+            System.out.println("Rs."+(int)b);
+        
+    }
+}
